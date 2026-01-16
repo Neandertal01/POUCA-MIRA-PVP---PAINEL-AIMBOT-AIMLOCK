@@ -4,33 +4,32 @@ local G2L = {};
 -- StarterGui.Painel do Mano
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
-G2L["1"]["Enabled"] = true;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
 G2L["1"]["Name"] = [[Painel do Mano]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
 
-
--- StarterGui.Painel do Mano.Menu
+-- StarterGui.Painel do Mano.Panel
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Size"] = UDim2.new(0, 755, 0, 431);
-G2L["2"]["Position"] = UDim2.new(0.17649, 0, 0.33261, 0);
+G2L["2"]["Size"] = UDim2.new(0, 471, 0, 257);
+G2L["2"]["Position"] = UDim2.new(0.21319, 0, 0.2243, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Name"] = [[Menu]];
+G2L["2"]["Name"] = [[Panel]];
 
 
--- StarterGui.Painel do Mano.Menu.Drag
+-- StarterGui.Painel do Mano.Panel.Drag
 G2L["3"] = Instance.new("LocalScript", G2L["2"]);
 G2L["3"]["Name"] = [[Drag]];
 
 
--- StarterGui.Painel do Mano.Menu.UICorner
+-- StarterGui.Painel do Mano.Panel.UICorner
 G2L["4"] = Instance.new("UICorner", G2L["2"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Title 2
+-- StarterGui.Painel do Mano.Panel.Title 2
 G2L["5"] = Instance.new("TextLabel", G2L["2"]);
 G2L["5"]["TextWrapped"] = true;
 G2L["5"]["BorderSizePixel"] = 0;
@@ -40,14 +39,14 @@ G2L["5"]["BackgroundColor3"] = Color3.fromRGB(53, 239, 255);
 G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["5"]["TextColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["5"]["BackgroundTransparency"] = 1;
-G2L["5"]["Size"] = UDim2.new(0, 173, 0, 34);
+G2L["5"]["Size"] = UDim2.new(0, 164, 0, 25);
 G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5"]["Text"] = [[Melhor Menu para PVP]];
 G2L["5"]["Name"] = [[Title 2]];
 G2L["5"]["Position"] = UDim2.new(0, 0, 0.0348, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Title
+-- StarterGui.Painel do Mano.Panel.Title
 G2L["6"] = Instance.new("TextLabel", G2L["2"]);
 G2L["6"]["TextWrapped"] = true;
 G2L["6"]["BorderSizePixel"] = 0;
@@ -57,23 +56,24 @@ G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["6"]["BackgroundTransparency"] = 1;
-G2L["6"]["Size"] = UDim2.new(0, 173, 0, 34);
+G2L["6"]["Size"] = UDim2.new(0, 134, 0, 24);
 G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6"]["Text"] = [[POUCA MIRA]];
 G2L["6"]["Name"] = [[Title]];
+G2L["6"]["Position"] = UDim2.new(-0.00425, 0, -0.01556, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Buttons
+-- StarterGui.Painel do Mano.Panel.Buttons
 G2L["7"] = Instance.new("Frame", G2L["2"]);
 G2L["7"]["BorderSizePixel"] = 0;
 G2L["7"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
-G2L["7"]["Size"] = UDim2.new(0, 755, 0, 42);
+G2L["7"]["Size"] = UDim2.new(0, 471, 0, 42);
 G2L["7"]["Position"] = UDim2.new(0, 0, 0.11369, 0);
 G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7"]["Name"] = [[Buttons]];
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.Aim
+-- StarterGui.Painel do Mano.Panel.Buttons.Aim
 G2L["8"] = Instance.new("TextButton", G2L["7"]);
 G2L["8"]["BorderSizePixel"] = 0;
 G2L["8"]["TextSize"] = 14;
@@ -84,25 +84,25 @@ G2L["8"]["Size"] = UDim2.new(0, 92, 0, 32);
 G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["8"]["Text"] = [[Aimbot/Aimlock]];
 G2L["8"]["Name"] = [[Aim]];
-G2L["8"]["Position"] = UDim2.new(0.09007, 0, 0.11861, 0);
+G2L["8"]["Position"] = UDim2.new(0.02637, 0, 0.11861, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.Aim.LocalScript
+-- StarterGui.Painel do Mano.Panel.Buttons.Aim.LocalScript
 G2L["9"] = Instance.new("LocalScript", G2L["8"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.Aim.UICorner
-G2L["a"] = Instance.new("UICorner", G2L["8"]);
+-- StarterGui.Painel do Mano.Panel.Buttons.Aim.LocalScript
+G2L["a"] = Instance.new("LocalScript", G2L["8"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.Aim.LocalScript
-G2L["b"] = Instance.new("LocalScript", G2L["8"]);
+-- StarterGui.Painel do Mano.Panel.Buttons.Aim.UICorner
+G2L["b"] = Instance.new("UICorner", G2L["8"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.Visual
+-- StarterGui.Painel do Mano.Panel.Buttons.Visual
 G2L["c"] = Instance.new("TextButton", G2L["7"]);
 G2L["c"]["BorderSizePixel"] = 0;
 G2L["c"]["TextSize"] = 14;
@@ -113,25 +113,25 @@ G2L["c"]["Size"] = UDim2.new(0, 92, 0, 32);
 G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["c"]["Text"] = [[ESP/VISUAL]];
 G2L["c"]["Name"] = [[Visual]];
-G2L["c"]["Position"] = UDim2.new(0.32848, 0, 0.11861, 0);
+G2L["c"]["Position"] = UDim2.new(0.27752, 0, 0.11861, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.Visual.LocalScript
+-- StarterGui.Painel do Mano.Panel.Buttons.Visual.LocalScript
 G2L["d"] = Instance.new("LocalScript", G2L["c"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.Visual.UICorner
-G2L["e"] = Instance.new("UICorner", G2L["c"]);
+-- StarterGui.Painel do Mano.Panel.Buttons.Visual.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["c"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.Visual.LocalScript
-G2L["f"] = Instance.new("LocalScript", G2L["c"]);
+-- StarterGui.Painel do Mano.Panel.Buttons.Visual.UICorner
+G2L["f"] = Instance.new("UICorner", G2L["c"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.FPS
+-- StarterGui.Painel do Mano.Panel.Buttons.FPS
 G2L["10"] = Instance.new("TextButton", G2L["7"]);
 G2L["10"]["BorderSizePixel"] = 0;
 G2L["10"]["TextSize"] = 14;
@@ -142,25 +142,25 @@ G2L["10"]["Size"] = UDim2.new(0, 92, 0, 32);
 G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["10"]["Text"] = [[DESEMPENHO]];
 G2L["10"]["Name"] = [[FPS]];
-G2L["10"]["Position"] = UDim2.new(0.54967, 0, 0.11861, 0);
+G2L["10"]["Position"] = UDim2.new(0.52419, 0, 0.11861, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.FPS.LocalScript
+-- StarterGui.Painel do Mano.Panel.Buttons.FPS.LocalScript
 G2L["11"] = Instance.new("LocalScript", G2L["10"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.FPS.UICorner
-G2L["12"] = Instance.new("UICorner", G2L["10"]);
+-- StarterGui.Painel do Mano.Panel.Buttons.FPS.LocalScript
+G2L["12"] = Instance.new("LocalScript", G2L["10"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.FPS.LocalScript
-G2L["13"] = Instance.new("LocalScript", G2L["10"]);
+-- StarterGui.Painel do Mano.Panel.Buttons.FPS.UICorner
+G2L["13"] = Instance.new("UICorner", G2L["10"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.Outros
+-- StarterGui.Painel do Mano.Panel.Buttons.Outros
 G2L["14"] = Instance.new("TextButton", G2L["7"]);
 G2L["14"]["BorderSizePixel"] = 0;
 G2L["14"]["TextSize"] = 14;
@@ -171,61 +171,61 @@ G2L["14"]["Size"] = UDim2.new(0, 92, 0, 32);
 G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["14"]["Text"] = [[INICIO]];
 G2L["14"]["Name"] = [[Outros]];
-G2L["14"]["Position"] = UDim2.new(0.78808, 0, 0.11861, 0);
+G2L["14"]["Position"] = UDim2.new(0.77534, 0, 0.11861, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.Outros.LocalScript
+-- StarterGui.Painel do Mano.Panel.Buttons.Outros.LocalScript
 G2L["15"] = Instance.new("LocalScript", G2L["14"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.Outros.UICorner
-G2L["16"] = Instance.new("UICorner", G2L["14"]);
+-- StarterGui.Painel do Mano.Panel.Buttons.Outros.LocalScript
+G2L["16"] = Instance.new("LocalScript", G2L["14"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Buttons.Outros.LocalScript
-G2L["17"] = Instance.new("LocalScript", G2L["14"]);
+-- StarterGui.Painel do Mano.Panel.Buttons.Outros.UICorner
+G2L["17"] = Instance.new("UICorner", G2L["14"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame
+-- StarterGui.Painel do Mano.Panel.AimFrame
 G2L["18"] = Instance.new("Frame", G2L["2"]);
 G2L["18"]["Visible"] = false;
 G2L["18"]["BorderSizePixel"] = 0;
 G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18"]["Size"] = UDim2.new(0, 755, 0, 340);
+G2L["18"]["Size"] = UDim2.new(0, 470, 0, 203);
 G2L["18"]["Position"] = UDim2.new(0, 0, 0.21114, 0);
 G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["18"]["Name"] = [[AimFrame]];
 G2L["18"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.aimbut
+-- StarterGui.Painel do Mano.Panel.AimFrame.aimbut
 G2L["19"] = Instance.new("TextButton", G2L["18"]);
 G2L["19"]["BorderSizePixel"] = 0;
 G2L["19"]["TextSize"] = 14;
 G2L["19"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["19"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["19"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["19"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["19"]["Text"] = [[]];
 G2L["19"]["Name"] = [[aimbut]];
-G2L["19"]["Position"] = UDim2.new(0.01589, 0, 0.03957, 0);
+G2L["19"]["Position"] = UDim2.new(0.0244, 0, 0.07897, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.aimbut.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.aimbut.LocalScript
 G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.aimbut.UICorner
+-- StarterGui.Painel do Mano.Panel.AimFrame.aimbut.UICorner
 G2L["1b"] = Instance.new("UICorner", G2L["19"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.aimbut.TextLabel
+-- StarterGui.Painel do Mano.Panel.AimFrame.aimbut.TextLabel
 G2L["1c"] = Instance.new("TextLabel", G2L["19"]);
 G2L["1c"]["TextWrapped"] = true;
 G2L["1c"]["BorderSizePixel"] = 0;
@@ -241,36 +241,36 @@ G2L["1c"]["Text"] = [[Ativar Aimbot]];
 G2L["1c"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.aimbut.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.aimbut.TextLabel.LocalScript
 G2L["1d"] = Instance.new("LocalScript", G2L["1c"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.aimlock
+-- StarterGui.Painel do Mano.Panel.AimFrame.aimlock
 G2L["1e"] = Instance.new("TextButton", G2L["18"]);
 G2L["1e"]["BorderSizePixel"] = 0;
 G2L["1e"]["TextSize"] = 14;
 G2L["1e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1e"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["1e"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1e"]["Text"] = [[]];
 G2L["1e"]["Name"] = [[aimlock]];
-G2L["1e"]["Position"] = UDim2.new(0.01589, 0, 0.19545, 0);
+G2L["1e"]["Position"] = UDim2.new(0.0244, 0, 0.22993, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.aimlock.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.aimlock.LocalScript
 G2L["1f"] = Instance.new("LocalScript", G2L["1e"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.aimlock.UICorner
+-- StarterGui.Painel do Mano.Panel.AimFrame.aimlock.UICorner
 G2L["20"] = Instance.new("UICorner", G2L["1e"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.aimlock.TextLabel
+-- StarterGui.Painel do Mano.Panel.AimFrame.aimlock.TextLabel
 G2L["21"] = Instance.new("TextLabel", G2L["1e"]);
 G2L["21"]["TextWrapped"] = true;
 G2L["21"]["BorderSizePixel"] = 0;
@@ -286,36 +286,36 @@ G2L["21"]["Text"] = [[Ativar AimLock]];
 G2L["21"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.aimlock.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.aimlock.TextLabel.LocalScript
 G2L["22"] = Instance.new("LocalScript", G2L["21"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.auxilio
+-- StarterGui.Painel do Mano.Panel.AimFrame.auxilio
 G2L["23"] = Instance.new("TextButton", G2L["18"]);
 G2L["23"]["BorderSizePixel"] = 0;
 G2L["23"]["TextSize"] = 14;
 G2L["23"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["23"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["23"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["23"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["23"]["Text"] = [[]];
 G2L["23"]["Name"] = [[auxilio]];
-G2L["23"]["Position"] = UDim2.new(0.01589, 0, 0.35721, 0);
+G2L["23"]["Position"] = UDim2.new(0.0244, 0, 0.38677, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.auxilio.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.auxilio.LocalScript
 G2L["24"] = Instance.new("LocalScript", G2L["23"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.auxilio.UICorner
+-- StarterGui.Painel do Mano.Panel.AimFrame.auxilio.UICorner
 G2L["25"] = Instance.new("UICorner", G2L["23"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.auxilio.TextLabel
+-- StarterGui.Painel do Mano.Panel.AimFrame.auxilio.TextLabel
 G2L["26"] = Instance.new("TextLabel", G2L["23"]);
 G2L["26"]["TextWrapped"] = true;
 G2L["26"]["BorderSizePixel"] = 0;
@@ -325,18 +325,18 @@ G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["26"]["BackgroundTransparency"] = 1;
-G2L["26"]["Size"] = UDim2.new(0, 207, 0, 29);
+G2L["26"]["Size"] = UDim2.new(0, 190, 0, 29);
 G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["26"]["Text"] = [[Ativar AimAssist]];
-G2L["26"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["26"]["Position"] = UDim2.new(1.09524, 0, -0.19048, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.auxilio.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.auxilio.TextLabel.LocalScript
 G2L["27"] = Instance.new("LocalScript", G2L["26"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.TextLabel
+-- StarterGui.Painel do Mano.Panel.AimFrame.TextLabel
 G2L["28"] = Instance.new("TextLabel", G2L["18"]);
 G2L["28"]["TextWrapped"] = true;
 G2L["28"]["BorderSizePixel"] = 0;
@@ -346,14 +346,15 @@ G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["28"]["TextColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["28"]["BackgroundTransparency"] = 1;
-G2L["28"]["Size"] = UDim2.new(0, 352, 0, 45);
+G2L["28"]["Size"] = UDim2.new(0, 220, 0, 18);
 G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["28"]["Text"] = [[-=======- AIMBOT CONFIG -=======-]];
-G2L["28"]["Position"] = UDim2.new(0.47947, 0, 0.01418, 0);
+G2L["28"]["Position"] = UDim2.new(0.52415, 0, 0.07822, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Force
+-- StarterGui.Painel do Mano.Panel.AimFrame.Force
 G2L["29"] = Instance.new("TextBox", G2L["18"]);
+G2L["29"]["CursorPosition"] = -1;
 G2L["29"]["Name"] = [[Force]];
 G2L["29"]["BorderSizePixel"] = 0;
 G2L["29"]["TextWrapped"] = true;
@@ -363,18 +364,18 @@ G2L["29"]["TextScaled"] = true;
 G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["29"]["PlaceholderText"] = [[0.87]];
-G2L["29"]["Size"] = UDim2.new(0, 163, 0, 22);
-G2L["29"]["Position"] = UDim2.new(0.60397, 0, 0.21507, 0);
+G2L["29"]["Size"] = UDim2.new(0, 163, 0, 15);
+G2L["29"]["Position"] = UDim2.new(0.60185, 0, 0.23478, 0);
 G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["29"]["Text"] = [[]];
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Force.UICorner
+-- StarterGui.Painel do Mano.Panel.AimFrame.Force.UICorner
 G2L["2a"] = Instance.new("UICorner", G2L["29"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.TextLabel
+-- StarterGui.Painel do Mano.Panel.AimFrame.TextLabel
 G2L["2b"] = Instance.new("TextLabel", G2L["18"]);
 G2L["2b"]["TextWrapped"] = true;
 G2L["2b"]["BorderSizePixel"] = 0;
@@ -384,19 +385,20 @@ G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2b"]["BackgroundTransparency"] = 1;
-G2L["2b"]["Size"] = UDim2.new(0, 89, 0, 28);
+G2L["2b"]["Size"] = UDim2.new(0, 79, 0, 18);
 G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2b"]["Text"] = [[Força]];
-G2L["2b"]["Position"] = UDim2.new(0.65298, 0, 0.13183, 0);
+G2L["2b"]["Position"] = UDim2.new(0.68915, 0, 0.14168, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.TextLabel.LocalScript
 G2L["2c"] = Instance.new("LocalScript", G2L["2b"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Range
+-- StarterGui.Painel do Mano.Panel.AimFrame.Range
 G2L["2d"] = Instance.new("TextBox", G2L["18"]);
+G2L["2d"]["CursorPosition"] = -1;
 G2L["2d"]["Name"] = [[Range]];
 G2L["2d"]["BorderSizePixel"] = 0;
 G2L["2d"]["TextWrapped"] = true;
@@ -406,18 +408,18 @@ G2L["2d"]["TextScaled"] = true;
 G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["2d"]["PlaceholderText"] = [[150]];
-G2L["2d"]["Size"] = UDim2.new(0, 163, 0, 22);
-G2L["2d"]["Position"] = UDim2.new(0.60397, 0, 0.37684, 0);
+G2L["2d"]["Size"] = UDim2.new(0, 163, 0, 15);
+G2L["2d"]["Position"] = UDim2.new(0.59972, 0, 0.4064, 0);
 G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2d"]["Text"] = [[]];
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Range.UICorner
+-- StarterGui.Painel do Mano.Panel.AimFrame.Range.UICorner
 G2L["2e"] = Instance.new("UICorner", G2L["2d"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.TextLabel
+-- StarterGui.Painel do Mano.Panel.AimFrame.TextLabel
 G2L["2f"] = Instance.new("TextLabel", G2L["18"]);
 G2L["2f"]["TextWrapped"] = true;
 G2L["2f"]["BorderSizePixel"] = 0;
@@ -427,19 +429,20 @@ G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2f"]["BackgroundTransparency"] = 1;
-G2L["2f"]["Size"] = UDim2.new(0, 89, 0, 28);
+G2L["2f"]["Size"] = UDim2.new(0, 79, 0, 18);
 G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2f"]["Text"] = [[Raio]];
-G2L["2f"]["Position"] = UDim2.new(0.65298, 0, 0.29359, 0);
+G2L["2f"]["Position"] = UDim2.new(0.68915, 0, 0.30837, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.TextLabel.LocalScript
 G2L["30"] = Instance.new("LocalScript", G2L["2f"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Distance
+-- StarterGui.Painel do Mano.Panel.AimFrame.Distance
 G2L["31"] = Instance.new("TextBox", G2L["18"]);
+G2L["31"]["CursorPosition"] = -1;
 G2L["31"]["Name"] = [[Distance]];
 G2L["31"]["BorderSizePixel"] = 0;
 G2L["31"]["TextWrapped"] = true;
@@ -449,18 +452,18 @@ G2L["31"]["TextScaled"] = true;
 G2L["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["31"]["PlaceholderText"] = [[300]];
-G2L["31"]["Size"] = UDim2.new(0, 163, 0, 22);
-G2L["31"]["Position"] = UDim2.new(0.60397, 0, 0.5239, 0);
+G2L["31"]["Size"] = UDim2.new(0, 163, 0, 15);
+G2L["31"]["Position"] = UDim2.new(0.60185, 0, 0.57316, 0);
 G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["31"]["Text"] = [[]];
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Distance.UICorner
+-- StarterGui.Painel do Mano.Panel.AimFrame.Distance.UICorner
 G2L["32"] = Instance.new("UICorner", G2L["31"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.TextLabel
+-- StarterGui.Painel do Mano.Panel.AimFrame.TextLabel
 G2L["33"] = Instance.new("TextLabel", G2L["18"]);
 G2L["33"]["TextWrapped"] = true;
 G2L["33"]["BorderSizePixel"] = 0;
@@ -470,43 +473,44 @@ G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["33"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["33"]["BackgroundTransparency"] = 1;
-G2L["33"]["Size"] = UDim2.new(0, 89, 0, 28);
+G2L["33"]["Size"] = UDim2.new(0, 79, 0, 18);
 G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["33"]["Text"] = [[FOV]];
-G2L["33"]["Position"] = UDim2.new(0.65298, 0, 0.44065, 0);
+G2L["33"]["Position"] = UDim2.new(0.68915, 0, 0.48006, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.TextLabel.LocalScript
 G2L["34"] = Instance.new("LocalScript", G2L["33"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Set
+-- StarterGui.Painel do Mano.Panel.AimFrame.Set
 G2L["35"] = Instance.new("TextButton", G2L["18"]);
 G2L["35"]["TextWrapped"] = true;
 G2L["35"]["BorderSizePixel"] = 0;
 G2L["35"]["TextSize"] = 26;
+G2L["35"]["TextScaled"] = true;
 G2L["35"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["35"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["35"]["Size"] = UDim2.new(0, 218, 0, 29);
+G2L["35"]["Size"] = UDim2.new(0, 170, 0, 21);
 G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["35"]["Text"] = [[Setar Configurações]];
 G2L["35"]["Name"] = [[Set]];
-G2L["35"]["Position"] = UDim2.new(0.56689, 0, 0.88074, 0);
+G2L["35"]["Position"] = UDim2.new(0.5988, 0, 0.87582, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Set.UICorner
-G2L["36"] = Instance.new("UICorner", G2L["35"]);
-
-
-
--- StarterGui.Painel do Mano.Menu.AimFrame.Set.LocalScript
-G2L["37"] = Instance.new("LocalScript", G2L["35"]);
+-- StarterGui.Painel do Mano.Panel.AimFrame.Set.LocalScript
+G2L["36"] = Instance.new("LocalScript", G2L["35"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.TextLabel
+-- StarterGui.Painel do Mano.Panel.AimFrame.Set.UICorner
+G2L["37"] = Instance.new("UICorner", G2L["35"]);
+
+
+
+-- StarterGui.Painel do Mano.Panel.AimFrame.TextLabel
 G2L["38"] = Instance.new("TextLabel", G2L["18"]);
 G2L["38"]["TextWrapped"] = true;
 G2L["38"]["BorderSizePixel"] = 0;
@@ -516,13 +520,13 @@ G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["38"]["TextColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["38"]["BackgroundTransparency"] = 1;
-G2L["38"]["Size"] = UDim2.new(0, 352, 0, 45);
+G2L["38"]["Size"] = UDim2.new(0, 258, 0, 26);
 G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["38"]["Text"] = [[-=======- AIMLOCK CONFIG -=======-]];
-G2L["38"]["Position"] = UDim2.new(0.01589, 0, 0.48771, 0);
+G2L["38"]["Position"] = UDim2.new(0.03717, 0, 0.52219, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Cabeca
+-- StarterGui.Painel do Mano.Panel.AimFrame.Cabeca
 G2L["39"] = Instance.new("TextButton", G2L["18"]);
 G2L["39"]["TextWrapped"] = true;
 G2L["39"]["BorderSizePixel"] = 0;
@@ -530,29 +534,29 @@ G2L["39"]["TextSize"] = 26;
 G2L["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["39"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["39"]["Size"] = UDim2.new(0, 199, 0, 23);
+G2L["39"]["Size"] = UDim2.new(0, 170, 0, 21);
 G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["39"]["Text"] = [[Head]];
 G2L["39"]["Name"] = [[Cabeca]];
-G2L["39"]["Position"] = UDim2.new(0.11656, 0, 0.7131, 0);
+G2L["39"]["Position"] = UDim2.new(0.11656, 0, 0.7525, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Cabeca.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.Cabeca.LocalScript
 G2L["3a"] = Instance.new("LocalScript", G2L["39"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Cabeca.UICorner
-G2L["3b"] = Instance.new("UICorner", G2L["39"]);
+-- StarterGui.Painel do Mano.Panel.AimFrame.Cabeca.LocalScript
+G2L["3b"] = Instance.new("LocalScript", G2L["39"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Cabeca.LocalScript
-G2L["3c"] = Instance.new("LocalScript", G2L["39"]);
+-- StarterGui.Painel do Mano.Panel.AimFrame.Cabeca.UICorner
+G2L["3c"] = Instance.new("UICorner", G2L["39"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.TextLabel
+-- StarterGui.Painel do Mano.Panel.AimFrame.TextLabel
 G2L["3d"] = Instance.new("TextLabel", G2L["18"]);
 G2L["3d"]["TextWrapped"] = true;
 G2L["3d"]["BorderSizePixel"] = 0;
@@ -565,15 +569,15 @@ G2L["3d"]["BackgroundTransparency"] = 1;
 G2L["3d"]["Size"] = UDim2.new(0, 89, 0, 28);
 G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3d"]["Text"] = [[Lock in]];
-G2L["3d"]["Position"] = UDim2.new(0.1894, 0, 0.58771, 0);
+G2L["3d"]["Position"] = UDim2.new(0.21494, 0, 0.61234, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.TextLabel.LocalScript
 G2L["3e"] = Instance.new("LocalScript", G2L["3d"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Corpo
+-- StarterGui.Painel do Mano.Panel.AimFrame.Corpo
 G2L["3f"] = Instance.new("TextButton", G2L["18"]);
 G2L["3f"]["TextWrapped"] = true;
 G2L["3f"]["BorderSizePixel"] = 0;
@@ -581,115 +585,117 @@ G2L["3f"]["TextSize"] = 26;
 G2L["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["3f"]["Size"] = UDim2.new(0, 199, 0, 23);
+G2L["3f"]["Size"] = UDim2.new(0, 170, 0, 21);
 G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3f"]["Text"] = [[Torso]];
 G2L["3f"]["Name"] = [[Corpo]];
-G2L["3f"]["Position"] = UDim2.new(0.11656, 0, 0.81604, 0);
+G2L["3f"]["Position"] = UDim2.new(0.11656, 0, 0.88008, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Corpo.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.Corpo.LocalScript
 G2L["40"] = Instance.new("LocalScript", G2L["3f"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Corpo.UICorner
-G2L["41"] = Instance.new("UICorner", G2L["3f"]);
+-- StarterGui.Painel do Mano.Panel.AimFrame.Corpo.LocalScript
+G2L["41"] = Instance.new("LocalScript", G2L["3f"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.Corpo.LocalScript
-G2L["42"] = Instance.new("LocalScript", G2L["3f"]);
+-- StarterGui.Painel do Mano.Panel.AimFrame.Corpo.UICorner
+G2L["42"] = Instance.new("UICorner", G2L["3f"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.NPC
+-- StarterGui.Painel do Mano.Panel.AimFrame.NPC
 G2L["43"] = Instance.new("TextButton", G2L["18"]);
 G2L["43"]["TextWrapped"] = true;
 G2L["43"]["BorderSizePixel"] = 0;
 G2L["43"]["TextSize"] = 26;
+G2L["43"]["TextScaled"] = true;
 G2L["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["43"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["43"]["Size"] = UDim2.new(0, 163, 0, 29);
+G2L["43"]["Size"] = UDim2.new(0, 95, 0, 17);
 G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["43"]["Text"] = [[NPC:OFF]];
 G2L["43"]["Name"] = [[NPC]];
-G2L["43"]["Position"] = UDim2.new(0.60397, 0, 0.64545, 0);
+G2L["43"]["Position"] = UDim2.new(0.60185, 0, 0.66515, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.NPC.UICorner
-G2L["44"] = Instance.new("UICorner", G2L["43"]);
-
-
-
--- StarterGui.Painel do Mano.Menu.AimFrame.NPC.LocalScript
-G2L["45"] = Instance.new("LocalScript", G2L["43"]);
+-- StarterGui.Painel do Mano.Panel.AimFrame.NPC.LocalScript
+G2L["44"] = Instance.new("LocalScript", G2L["43"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.TC
+-- StarterGui.Painel do Mano.Panel.AimFrame.NPC.UICorner
+G2L["45"] = Instance.new("UICorner", G2L["43"]);
+
+
+
+-- StarterGui.Painel do Mano.Panel.AimFrame.TC
 G2L["46"] = Instance.new("TextButton", G2L["18"]);
 G2L["46"]["TextWrapped"] = true;
 G2L["46"]["BorderSizePixel"] = 0;
 G2L["46"]["TextSize"] = 26;
+G2L["46"]["TextScaled"] = true;
 G2L["46"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["46"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["46"]["Size"] = UDim2.new(0, 163, 0, 29);
+G2L["46"]["Size"] = UDim2.new(0, 95, 0, 16);
 G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["46"]["Text"] = [[Team Check]];
 G2L["46"]["Name"] = [[TC]];
-G2L["46"]["Position"] = UDim2.new(0.60397, 0, 0.75721, 0);
+G2L["46"]["Position"] = UDim2.new(0.59972, 0, 0.77353, 0);
 
 
--- StarterGui.Painel do Mano.Menu.AimFrame.TC.UICorner
-G2L["47"] = Instance.new("UICorner", G2L["46"]);
-
-
-
--- StarterGui.Painel do Mano.Menu.AimFrame.TC.LocalScript
-G2L["48"] = Instance.new("LocalScript", G2L["46"]);
+-- StarterGui.Painel do Mano.Panel.AimFrame.TC.LocalScript
+G2L["47"] = Instance.new("LocalScript", G2L["46"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais
+-- StarterGui.Painel do Mano.Panel.AimFrame.TC.UICorner
+G2L["48"] = Instance.new("UICorner", G2L["46"]);
+
+
+
+-- StarterGui.Painel do Mano.Panel.Visuais
 G2L["49"] = Instance.new("Frame", G2L["2"]);
 G2L["49"]["Visible"] = false;
 G2L["49"]["BorderSizePixel"] = 0;
 G2L["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["49"]["Size"] = UDim2.new(0, 755, 0, 340);
+G2L["49"]["Size"] = UDim2.new(0, 471, 0, 203);
 G2L["49"]["Position"] = UDim2.new(0, 0, 0.21114, 0);
 G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["49"]["Name"] = [[Visuais]];
 G2L["49"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.esp
+-- StarterGui.Painel do Mano.Panel.Visuais.esp
 G2L["4a"] = Instance.new("TextButton", G2L["49"]);
 G2L["4a"]["BorderSizePixel"] = 0;
 G2L["4a"]["TextSize"] = 14;
 G2L["4a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4a"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["4a"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4a"]["Text"] = [[]];
 G2L["4a"]["Name"] = [[esp]];
-G2L["4a"]["Position"] = UDim2.new(0.01457, 0, 0.03918, 0);
+G2L["4a"]["Position"] = UDim2.new(0.01245, 0, 0.05888, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.esp.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.esp.LocalScript
 G2L["4b"] = Instance.new("LocalScript", G2L["4a"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.esp.UICorner
+-- StarterGui.Painel do Mano.Panel.Visuais.esp.UICorner
 G2L["4c"] = Instance.new("UICorner", G2L["4a"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.esp.TextLabel
+-- StarterGui.Painel do Mano.Panel.Visuais.esp.TextLabel
 G2L["4d"] = Instance.new("TextLabel", G2L["4a"]);
 G2L["4d"]["TextWrapped"] = true;
 G2L["4d"]["BorderSizePixel"] = 0;
@@ -702,39 +708,39 @@ G2L["4d"]["BackgroundTransparency"] = 1;
 G2L["4d"]["Size"] = UDim2.new(0, 135, 0, 29);
 G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4d"]["Text"] = [[Ativar ESP]];
-G2L["4d"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["4d"]["Position"] = UDim2.new(1.04762, 0, -0.19048, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.esp.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.esp.TextLabel.LocalScript
 G2L["4e"] = Instance.new("LocalScript", G2L["4d"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.t esp
+-- StarterGui.Painel do Mano.Panel.Visuais.t esp
 G2L["4f"] = Instance.new("TextButton", G2L["49"]);
 G2L["4f"]["BorderSizePixel"] = 0;
 G2L["4f"]["TextSize"] = 14;
 G2L["4f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["4f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4f"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["4f"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4f"]["Text"] = [[]];
 G2L["4f"]["Name"] = [[t esp]];
-G2L["4f"]["Position"] = UDim2.new(0.01457, 0, 0.20682, 0);
+G2L["4f"]["Position"] = UDim2.new(0.01245, 0, 0.2216, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.t esp.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.t esp.LocalScript
 G2L["50"] = Instance.new("LocalScript", G2L["4f"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.t esp.UICorner
+-- StarterGui.Painel do Mano.Panel.Visuais.t esp.UICorner
 G2L["51"] = Instance.new("UICorner", G2L["4f"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.t esp.TextLabel
+-- StarterGui.Painel do Mano.Panel.Visuais.t esp.TextLabel
 G2L["52"] = Instance.new("TextLabel", G2L["4f"]);
 G2L["52"]["TextWrapped"] = true;
 G2L["52"]["BorderSizePixel"] = 0;
@@ -747,39 +753,39 @@ G2L["52"]["BackgroundTransparency"] = 1;
 G2L["52"]["Size"] = UDim2.new(0, 165, 0, 29);
 G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["52"]["Text"] = [[Ativar Team ESP]];
-G2L["52"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["52"]["Position"] = UDim2.new(1.04762, 0, -0.19048, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.t esp.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.t esp.TextLabel.LocalScript
 G2L["53"] = Instance.new("LocalScript", G2L["52"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.l esp
+-- StarterGui.Painel do Mano.Panel.Visuais.l esp
 G2L["54"] = Instance.new("TextButton", G2L["49"]);
 G2L["54"]["BorderSizePixel"] = 0;
 G2L["54"]["TextSize"] = 14;
 G2L["54"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["54"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["54"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["54"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["54"]["Text"] = [[]];
 G2L["54"]["Name"] = [[l esp]];
-G2L["54"]["Position"] = UDim2.new(0.01457, 0, 0.38035, 0);
+G2L["54"]["Position"] = UDim2.new(0.01245, 0, 0.38035, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.l esp.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.l esp.LocalScript
 G2L["55"] = Instance.new("LocalScript", G2L["54"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.l esp.UICorner
+-- StarterGui.Painel do Mano.Panel.Visuais.l esp.UICorner
 G2L["56"] = Instance.new("UICorner", G2L["54"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.l esp.TextLabel
+-- StarterGui.Painel do Mano.Panel.Visuais.l esp.TextLabel
 G2L["57"] = Instance.new("TextLabel", G2L["54"]);
 G2L["57"]["TextWrapped"] = true;
 G2L["57"]["BorderSizePixel"] = 0;
@@ -792,39 +798,39 @@ G2L["57"]["BackgroundTransparency"] = 1;
 G2L["57"]["Size"] = UDim2.new(0, 133, 0, 29);
 G2L["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["57"]["Text"] = [[Linhas ESP]];
-G2L["57"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["57"]["Position"] = UDim2.new(1, 0, -0.19048, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.l esp.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.l esp.TextLabel.LocalScript
 G2L["58"] = Instance.new("LocalScript", G2L["57"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.m esp
+-- StarterGui.Painel do Mano.Panel.Visuais.m esp
 G2L["59"] = Instance.new("TextButton", G2L["49"]);
 G2L["59"]["BorderSizePixel"] = 0;
 G2L["59"]["TextSize"] = 14;
 G2L["59"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["59"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["59"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["59"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["59"]["Text"] = [[]];
 G2L["59"]["Name"] = [[m esp]];
-G2L["59"]["Position"] = UDim2.new(0.01457, 0, 0.56565, 0);
+G2L["59"]["Position"] = UDim2.new(0.01245, 0, 0.55087, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.m esp.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.m esp.LocalScript
 G2L["5a"] = Instance.new("LocalScript", G2L["59"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.m esp.UICorner
+-- StarterGui.Painel do Mano.Panel.Visuais.m esp.UICorner
 G2L["5b"] = Instance.new("UICorner", G2L["59"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.m esp.TextLabel
+-- StarterGui.Painel do Mano.Panel.Visuais.m esp.TextLabel
 G2L["5c"] = Instance.new("TextLabel", G2L["59"]);
 G2L["5c"]["TextWrapped"] = true;
 G2L["5c"]["BorderSizePixel"] = 0;
@@ -837,39 +843,39 @@ G2L["5c"]["BackgroundTransparency"] = 1;
 G2L["5c"]["Size"] = UDim2.new(0, 133, 0, 29);
 G2L["5c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5c"]["Text"] = [[Mostar Times]];
-G2L["5c"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["5c"]["Position"] = UDim2.new(1, 0, -0.19048, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.m esp.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.m esp.TextLabel.LocalScript
 G2L["5d"] = Instance.new("LocalScript", G2L["5c"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.d esp
+-- StarterGui.Painel do Mano.Panel.Visuais.d esp
 G2L["5e"] = Instance.new("TextButton", G2L["49"]);
 G2L["5e"]["BorderSizePixel"] = 0;
 G2L["5e"]["TextSize"] = 14;
 G2L["5e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5e"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["5e"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5e"]["Text"] = [[]];
 G2L["5e"]["Name"] = [[d esp]];
-G2L["5e"]["Position"] = UDim2.new(0.01457, 0, 0.74212, 0);
+G2L["5e"]["Position"] = UDim2.new(0.01245, 0, 0.72734, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.d esp.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.d esp.LocalScript
 G2L["5f"] = Instance.new("LocalScript", G2L["5e"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.d esp.UICorner
+-- StarterGui.Painel do Mano.Panel.Visuais.d esp.UICorner
 G2L["60"] = Instance.new("UICorner", G2L["5e"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.d esp.TextLabel
+-- StarterGui.Painel do Mano.Panel.Visuais.d esp.TextLabel
 G2L["61"] = Instance.new("TextLabel", G2L["5e"]);
 G2L["61"]["TextWrapped"] = true;
 G2L["61"]["BorderSizePixel"] = 0;
@@ -882,39 +888,39 @@ G2L["61"]["BackgroundTransparency"] = 1;
 G2L["61"]["Size"] = UDim2.new(0, 196, 0, 29);
 G2L["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["61"]["Text"] = [[Mostar Distancia]];
-G2L["61"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["61"]["Position"] = UDim2.new(0.95238, 0, -0.19048, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.d esp.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.d esp.TextLabel.LocalScript
 G2L["62"] = Instance.new("LocalScript", G2L["61"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.mira fixa
+-- StarterGui.Painel do Mano.Panel.Visuais.mira fixa
 G2L["63"] = Instance.new("TextButton", G2L["49"]);
 G2L["63"]["BorderSizePixel"] = 0;
 G2L["63"]["TextSize"] = 14;
 G2L["63"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["63"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["63"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["63"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["63"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["63"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["63"]["Text"] = [[]];
 G2L["63"]["Name"] = [[mira fixa]];
-G2L["63"]["Position"] = UDim2.new(0.48079, 0, 0.03918, 0);
+G2L["63"]["Position"] = UDim2.new(0.47655, 0, 0.05888, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.mira fixa.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.mira fixa.LocalScript
 G2L["64"] = Instance.new("LocalScript", G2L["63"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.mira fixa.UICorner
+-- StarterGui.Painel do Mano.Panel.Visuais.mira fixa.UICorner
 G2L["65"] = Instance.new("UICorner", G2L["63"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.mira fixa.TextLabel
+-- StarterGui.Painel do Mano.Panel.Visuais.mira fixa.TextLabel
 G2L["66"] = Instance.new("TextLabel", G2L["63"]);
 G2L["66"]["TextWrapped"] = true;
 G2L["66"]["BorderSizePixel"] = 0;
@@ -930,13 +936,14 @@ G2L["66"]["Text"] = [[Mira Fixa]];
 G2L["66"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.mira fixa.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.mira fixa.TextLabel.LocalScript
 G2L["67"] = Instance.new("LocalScript", G2L["66"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.SetFov
+-- StarterGui.Painel do Mano.Panel.Visuais.SetFov
 G2L["68"] = Instance.new("TextBox", G2L["49"]);
+G2L["68"]["CursorPosition"] = -1;
 G2L["68"]["Name"] = [[SetFov]];
 G2L["68"]["BorderSizePixel"] = 0;
 G2L["68"]["TextWrapped"] = true;
@@ -946,47 +953,47 @@ G2L["68"]["TextScaled"] = true;
 G2L["68"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["68"]["PlaceholderText"] = [[Set Fov...]];
-G2L["68"]["Size"] = UDim2.new(0, 213, 0, 32);
-G2L["68"]["Position"] = UDim2.new(0.48079, 0, 0.35331, 0);
+G2L["68"]["Size"] = UDim2.new(0, 163, 0, 15);
+G2L["68"]["Position"] = UDim2.new(0.48292, 0, 0.39272, 0);
 G2L["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["68"]["Text"] = [[]];
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.SetFov.UICorner
-G2L["69"] = Instance.new("UICorner", G2L["68"]);
+-- StarterGui.Painel do Mano.Panel.Visuais.SetFov.LocalScript
+G2L["69"] = Instance.new("LocalScript", G2L["68"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.SetFov.LocalScript
-G2L["6a"] = Instance.new("LocalScript", G2L["68"]);
+-- StarterGui.Painel do Mano.Panel.Visuais.SetFov.UICorner
+G2L["6a"] = Instance.new("UICorner", G2L["68"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.FOV
+-- StarterGui.Painel do Mano.Panel.Visuais.FOV
 G2L["6b"] = Instance.new("TextButton", G2L["49"]);
 G2L["6b"]["BorderSizePixel"] = 0;
 G2L["6b"]["TextSize"] = 14;
 G2L["6b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["6b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6b"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["6b"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6b"]["Text"] = [[]];
 G2L["6b"]["Name"] = [[FOV]];
-G2L["6b"]["Position"] = UDim2.new(0.48079, 0, 0.20524, 0);
+G2L["6b"]["Position"] = UDim2.new(0.47655, 0, 0.22002, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.FOV.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.FOV.LocalScript
 G2L["6c"] = Instance.new("LocalScript", G2L["6b"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.FOV.UICorner
+-- StarterGui.Painel do Mano.Panel.Visuais.FOV.UICorner
 G2L["6d"] = Instance.new("UICorner", G2L["6b"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.FOV.TextLabel
+-- StarterGui.Painel do Mano.Panel.Visuais.FOV.TextLabel
 G2L["6e"] = Instance.new("TextLabel", G2L["6b"]);
 G2L["6e"]["TextWrapped"] = true;
 G2L["6e"]["BorderSizePixel"] = 0;
@@ -1002,48 +1009,48 @@ G2L["6e"]["Text"] = [[Mudar FOV]];
 G2L["6e"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Visuais.FOV.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.FOV.TextLabel.LocalScript
 G2L["6f"] = Instance.new("LocalScript", G2L["6e"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps
+-- StarterGui.Painel do Mano.Panel.Fps
 G2L["70"] = Instance.new("Frame", G2L["2"]);
 G2L["70"]["Visible"] = false;
 G2L["70"]["BorderSizePixel"] = 0;
 G2L["70"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["70"]["Size"] = UDim2.new(0, 755, 0, 340);
+G2L["70"]["Size"] = UDim2.new(0, 469, 0, 201);
 G2L["70"]["Position"] = UDim2.new(0, 0, 0.21114, 0);
 G2L["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["70"]["Name"] = [[Fps]];
 G2L["70"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff
+-- StarterGui.Painel do Mano.Panel.Fps.eff
 G2L["71"] = Instance.new("TextButton", G2L["70"]);
 G2L["71"]["BorderSizePixel"] = 0;
 G2L["71"]["TextSize"] = 14;
 G2L["71"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["71"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["71"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["71"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["71"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["71"]["Text"] = [[]];
 G2L["71"]["Name"] = [[eff]];
-G2L["71"]["Position"] = UDim2.new(0.01457, 0, 0.03918, 0);
+G2L["71"]["Position"] = UDim2.new(0.00391, 0, 0.08395, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.LocalScript
 G2L["72"] = Instance.new("LocalScript", G2L["71"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.UICorner
+-- StarterGui.Painel do Mano.Panel.Fps.eff.UICorner
 G2L["73"] = Instance.new("UICorner", G2L["71"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel
 G2L["74"] = Instance.new("TextLabel", G2L["71"]);
 G2L["74"]["TextWrapped"] = true;
 G2L["74"]["BorderSizePixel"] = 0;
@@ -1053,42 +1060,42 @@ G2L["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["74"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["74"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["74"]["BackgroundTransparency"] = 1;
-G2L["74"]["Size"] = UDim2.new(0, 187, 0, 29);
+G2L["74"]["Size"] = UDim2.new(0, 185, 0, 29);
 G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["74"]["Text"] = [[Desativar Efeitos]];
-G2L["74"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["74"]["Position"] = UDim2.new(0.95238, 0, -0.19048, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel.LocalScript
 G2L["75"] = Instance.new("LocalScript", G2L["74"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff
+-- StarterGui.Painel do Mano.Panel.Fps.eff
 G2L["76"] = Instance.new("TextButton", G2L["70"]);
 G2L["76"]["BorderSizePixel"] = 0;
 G2L["76"]["TextSize"] = 14;
 G2L["76"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["76"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["76"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["76"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["76"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["76"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["76"]["Text"] = [[]];
 G2L["76"]["Name"] = [[eff]];
-G2L["76"]["Position"] = UDim2.new(0.01457, 0, 0.20977, 0);
+G2L["76"]["Position"] = UDim2.new(0.00391, 0, 0.24459, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.LocalScript
 G2L["77"] = Instance.new("LocalScript", G2L["76"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.UICorner
+-- StarterGui.Painel do Mano.Panel.Fps.eff.UICorner
 G2L["78"] = Instance.new("UICorner", G2L["76"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel
 G2L["79"] = Instance.new("TextLabel", G2L["76"]);
 G2L["79"]["TextWrapped"] = true;
 G2L["79"]["BorderSizePixel"] = 0;
@@ -1101,39 +1108,39 @@ G2L["79"]["BackgroundTransparency"] = 1;
 G2L["79"]["Size"] = UDim2.new(0, 208, 0, 29);
 G2L["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["79"]["Text"] = [[Desativar Particulas]];
-G2L["79"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["79"]["Position"] = UDim2.new(0.95238, 0, -0.19048, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel.LocalScript
 G2L["7a"] = Instance.new("LocalScript", G2L["79"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff
+-- StarterGui.Painel do Mano.Panel.Fps.eff
 G2L["7b"] = Instance.new("TextButton", G2L["70"]);
 G2L["7b"]["BorderSizePixel"] = 0;
 G2L["7b"]["TextSize"] = 14;
 G2L["7b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7b"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["7b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7b"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["7b"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7b"]["Text"] = [[]];
 G2L["7b"]["Name"] = [[eff]];
-G2L["7b"]["Position"] = UDim2.new(0.01457, 0, 0.39506, 0);
+G2L["7b"]["Position"] = UDim2.new(0.00391, 0, 0.40501, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.LocalScript
 G2L["7c"] = Instance.new("LocalScript", G2L["7b"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.UICorner
+-- StarterGui.Painel do Mano.Panel.Fps.eff.UICorner
 G2L["7d"] = Instance.new("UICorner", G2L["7b"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel
 G2L["7e"] = Instance.new("TextLabel", G2L["7b"]);
 G2L["7e"]["TextWrapped"] = true;
 G2L["7e"]["BorderSizePixel"] = 0;
@@ -1146,39 +1153,39 @@ G2L["7e"]["BackgroundTransparency"] = 1;
 G2L["7e"]["Size"] = UDim2.new(0, 208, 0, 29);
 G2L["7e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7e"]["Text"] = [[Desativar Sombras]];
-G2L["7e"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["7e"]["Position"] = UDim2.new(0.95238, 0, -0.19048, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel.LocalScript
 G2L["7f"] = Instance.new("LocalScript", G2L["7e"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff
+-- StarterGui.Painel do Mano.Panel.Fps.eff
 G2L["80"] = Instance.new("TextButton", G2L["70"]);
 G2L["80"]["BorderSizePixel"] = 0;
 G2L["80"]["TextSize"] = 14;
 G2L["80"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["80"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["80"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["80"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["80"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["80"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["80"]["Text"] = [[]];
 G2L["80"]["Name"] = [[eff]];
-G2L["80"]["Position"] = UDim2.new(0.01457, 0, 0.57741, 0);
+G2L["80"]["Position"] = UDim2.new(0.00391, 0, 0.56249, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.LocalScript
 G2L["81"] = Instance.new("LocalScript", G2L["80"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.UICorner
+-- StarterGui.Painel do Mano.Panel.Fps.eff.UICorner
 G2L["82"] = Instance.new("UICorner", G2L["80"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel
 G2L["83"] = Instance.new("TextLabel", G2L["80"]);
 G2L["83"]["TextWrapped"] = true;
 G2L["83"]["BorderSizePixel"] = 0;
@@ -1191,39 +1198,39 @@ G2L["83"]["BackgroundTransparency"] = 1;
 G2L["83"]["Size"] = UDim2.new(0, 208, 0, 29);
 G2L["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["83"]["Text"] = [[Desativar Materiais]];
-G2L["83"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["83"]["Position"] = UDim2.new(1, 0, -0.19048, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel.LocalScript
 G2L["84"] = Instance.new("LocalScript", G2L["83"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff
+-- StarterGui.Painel do Mano.Panel.Fps.eff
 G2L["85"] = Instance.new("TextButton", G2L["70"]);
 G2L["85"]["BorderSizePixel"] = 0;
 G2L["85"]["TextSize"] = 14;
 G2L["85"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["85"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["85"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["85"]["Size"] = UDim2.new(0, 29, 0, 29);
+G2L["85"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["85"]["Text"] = [[]];
 G2L["85"]["Name"] = [[eff]];
-G2L["85"]["Position"] = UDim2.new(0.01457, 0, 0.76565, 0);
+G2L["85"]["Position"] = UDim2.new(0.00391, 0, 0.72087, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.LocalScript
 G2L["86"] = Instance.new("LocalScript", G2L["85"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.UICorner
+-- StarterGui.Painel do Mano.Panel.Fps.eff.UICorner
 G2L["87"] = Instance.new("UICorner", G2L["85"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel
 G2L["88"] = Instance.new("TextLabel", G2L["85"]);
 G2L["88"]["TextWrapped"] = true;
 G2L["88"]["BorderSizePixel"] = 0;
@@ -1233,18 +1240,18 @@ G2L["88"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["88"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["88"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["88"]["BackgroundTransparency"] = 1;
-G2L["88"]["Size"] = UDim2.new(0, 148, 0, 29);
+G2L["88"]["Size"] = UDim2.new(0, 149, 0, 29);
 G2L["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["88"]["Text"] = [[Modo Batata]];
-G2L["88"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["88"]["Position"] = UDim2.new(0.95238, 0, -0.19048, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel.LocalScript
 G2L["89"] = Instance.new("LocalScript", G2L["88"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.FPSDisplay
+-- StarterGui.Painel do Mano.Panel.Fps.FPSDisplay
 G2L["8a"] = Instance.new("TextLabel", G2L["70"]);
 G2L["8a"]["TextWrapped"] = true;
 G2L["8a"]["BorderSizePixel"] = 0;
@@ -1253,29 +1260,29 @@ G2L["8a"]["TextScaled"] = true;
 G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["8a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["8a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8a"]["Size"] = UDim2.new(0, 140, 0, 41);
+G2L["8a"]["Size"] = UDim2.new(0, 115, 0, 28);
 G2L["8a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["8a"]["Text"] = [[0]];
 G2L["8a"]["Name"] = [[FPSDisplay]];
-G2L["8a"]["Position"] = UDim2.new(0.40643, 0, 0.14818, 0);
+G2L["8a"]["Position"] = UDim2.new(0.6431, 0, 0.26261, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Fps.FPSDisplay.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.FPSDisplay.LocalScript
 G2L["8b"] = Instance.new("LocalScript", G2L["8a"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.FPSDisplay.UICorner
-G2L["8c"] = Instance.new("UICorner", G2L["8a"]);
+-- StarterGui.Painel do Mano.Panel.Fps.FPSDisplay.LocalScript
+G2L["8c"] = Instance.new("LocalScript", G2L["8a"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.FPSDisplay.LocalScript
-G2L["8d"] = Instance.new("LocalScript", G2L["8a"]);
+-- StarterGui.Painel do Mano.Panel.Fps.FPSDisplay.UICorner
+G2L["8d"] = Instance.new("UICorner", G2L["8a"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Fps.TextLabel
+-- StarterGui.Painel do Mano.Panel.Fps.TextLabel
 G2L["8e"] = Instance.new("TextLabel", G2L["70"]);
 G2L["8e"]["TextWrapped"] = true;
 G2L["8e"]["BorderSizePixel"] = 0;
@@ -1288,26 +1295,26 @@ G2L["8e"]["BackgroundTransparency"] = 1;
 G2L["8e"]["Size"] = UDim2.new(0, 115, 0, 38);
 G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["8e"]["Text"] = [[FPS]];
-G2L["8e"]["Position"] = UDim2.new(0.42384, 0, 0.03771, 0);
+G2L["8e"]["Position"] = UDim2.new(0.64133, 0, 0.07254, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Fps.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.TextLabel.LocalScript
 G2L["8f"] = Instance.new("LocalScript", G2L["8e"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Outers
+-- StarterGui.Painel do Mano.Panel.Outers
 G2L["90"] = Instance.new("Frame", G2L["2"]);
 G2L["90"]["BorderSizePixel"] = 0;
 G2L["90"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["90"]["Size"] = UDim2.new(0, 755, 0, 340);
+G2L["90"]["Size"] = UDim2.new(0, 469, 0, 202);
 G2L["90"]["Position"] = UDim2.new(0, 0, 0.21114, 0);
 G2L["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["90"]["Name"] = [[Outers]];
 G2L["90"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Painel do Mano.Menu.Outers.TextLabel
+-- StarterGui.Painel do Mano.Panel.Outers.TextLabel
 G2L["91"] = Instance.new("TextLabel", G2L["90"]);
 G2L["91"]["TextWrapped"] = true;
 G2L["91"]["BorderSizePixel"] = 0;
@@ -1317,13 +1324,13 @@ G2L["91"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["91"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["91"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["91"]["BackgroundTransparency"] = 1;
-G2L["91"]["Size"] = UDim2.new(0, 212, 0, 44);
+G2L["91"]["Size"] = UDim2.new(0, 143, 0, 34);
 G2L["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["91"]["Text"] = [[Painel Fornecido Por:]];
-G2L["91"]["Position"] = UDim2.new(0.02781, 0, 0.03771, 0);
+G2L["91"]["Position"] = UDim2.new(0.02781, 0, 0.07595, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Outers.Pedrinhuu On Top
+-- StarterGui.Painel do Mano.Panel.Outers.Pedrinhuu On Top
 G2L["92"] = Instance.new("TextLabel", G2L["90"]);
 G2L["92"]["TextWrapped"] = true;
 G2L["92"]["BorderSizePixel"] = 0;
@@ -1333,19 +1340,19 @@ G2L["92"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["92"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["92"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["92"]["BackgroundTransparency"] = 1;
-G2L["92"]["Size"] = UDim2.new(0, 269, 0, 51);
+G2L["92"]["Size"] = UDim2.new(0, 183, 0, 49);
 G2L["92"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["92"]["Text"] = [[Pedrinhuu Scripts]];
 G2L["92"]["Name"] = [[Pedrinhuu On Top]];
-G2L["92"]["Position"] = UDim2.new(0.02781, 0, 0.14947, 0);
+G2L["92"]["Position"] = UDim2.new(0.02568, 0, 0.17099, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Outers.Pedrinhuu On Top.LocalScript
+-- StarterGui.Painel do Mano.Panel.Outers.Pedrinhuu On Top.LocalScript
 G2L["93"] = Instance.new("LocalScript", G2L["92"]);
 
 
 
--- StarterGui.Painel do Mano.Menu.Outers.Change Title
+-- StarterGui.Painel do Mano.Panel.Outers.Change Title
 G2L["94"] = Instance.new("TextLabel", G2L["90"]);
 G2L["94"]["TextWrapped"] = true;
 G2L["94"]["BorderSizePixel"] = 0;
@@ -1355,14 +1362,14 @@ G2L["94"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["94"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["94"]["TextColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["94"]["BackgroundTransparency"] = 1;
-G2L["94"]["Size"] = UDim2.new(0, 343, 0, 30);
+G2L["94"]["Size"] = UDim2.new(0, 248, 0, 27);
 G2L["94"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["94"]["Text"] = [[-=======- CHANGE LOGS -=======-]];
 G2L["94"]["Name"] = [[Change Title]];
-G2L["94"]["Position"] = UDim2.new(0.50993, 0, 0.03771, 0);
+G2L["94"]["Position"] = UDim2.new(0.44462, 0, 0.08226, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Outers.TextLabel
+-- StarterGui.Painel do Mano.Panel.Outers.TextLabel
 G2L["95"] = Instance.new("TextLabel", G2L["90"]);
 G2L["95"]["TextWrapped"] = true;
 G2L["95"]["BorderSizePixel"] = 0;
@@ -1372,150 +1379,112 @@ G2L["95"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["95"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["95"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["95"]["BackgroundTransparency"] = 1;
-G2L["95"]["Size"] = UDim2.new(0, 302, 0, 38);
+G2L["95"]["Size"] = UDim2.new(0, 219, 0, 34);
 G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["95"]["Text"] = [[Painel Não Atualizado Ainda]];
-G2L["95"]["Position"] = UDim2.new(0.54702, 0, 0.14947, 0);
+G2L["95"]["Position"] = UDim2.new(0.47367, 0, 0.16888, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Outers.TextLabel
+-- StarterGui.Painel do Mano.Panel.Outers.Change Title
 G2L["96"] = Instance.new("TextLabel", G2L["90"]);
 G2L["96"]["TextWrapped"] = true;
 G2L["96"]["BorderSizePixel"] = 0;
 G2L["96"]["TextSize"] = 14;
-G2L["96"]["TextTransparency"] = 0.58;
+G2L["96"]["TextTransparency"] = 0.5;
 G2L["96"]["TextScaled"] = true;
 G2L["96"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["96"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["96"]["TextColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["96"]["BackgroundTransparency"] = 1;
-G2L["96"]["Size"] = UDim2.new(0, 104, 0, 23);
+G2L["96"]["Size"] = UDim2.new(0, 141, 0, 17);
 G2L["96"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["96"]["Text"] = [[Version: V1]];
-G2L["96"]["Position"] = UDim2.new(0.05298, 0, 0.89653, 0);
+G2L["96"]["Text"] = [[Owned: Pouca Mira]];
+G2L["96"]["Name"] = [[Change Title]];
+G2L["96"]["Position"] = UDim2.new(-0.00314, 0, 0.9189, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Outers.TextLabel
+-- StarterGui.Painel do Mano.Panel.Outers.Change Title
 G2L["97"] = Instance.new("TextLabel", G2L["90"]);
 G2L["97"]["TextWrapped"] = true;
 G2L["97"]["BorderSizePixel"] = 0;
 G2L["97"]["TextSize"] = 14;
-G2L["97"]["TextTransparency"] = 0.58;
+G2L["97"]["TextTransparency"] = 0.5;
 G2L["97"]["TextScaled"] = true;
 G2L["97"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["97"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["97"]["TextColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["97"]["BackgroundTransparency"] = 1;
-G2L["97"]["Size"] = UDim2.new(0, 169, 0, 23);
+G2L["97"]["Size"] = UDim2.new(0, 141, 0, 17);
 G2L["97"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["97"]["Text"] = [[Criado em 15/02/2026]];
-G2L["97"]["Position"] = UDim2.new(0.21722, 0, 0.89653, 0);
+G2L["97"]["Text"] = [[Created: 15/01/2026]];
+G2L["97"]["Name"] = [[Change Title]];
+G2L["97"]["Position"] = UDim2.new(0.70048, 0, 0.9189, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Outers.TextLabel
-G2L["98"] = Instance.new("TextLabel", G2L["90"]);
-G2L["98"]["TextWrapped"] = true;
+-- StarterGui.Painel do Mano.Panel.Close
+G2L["98"] = Instance.new("TextButton", G2L["2"]);
 G2L["98"]["BorderSizePixel"] = 0;
-G2L["98"]["TextSize"] = 14;
-G2L["98"]["TextTransparency"] = 0.58;
-G2L["98"]["TextScaled"] = true;
+G2L["98"]["TextSize"] = 32;
+G2L["98"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["98"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["98"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["98"]["TextColor3"] = Color3.fromRGB(49, 192, 199);
 G2L["98"]["BackgroundTransparency"] = 1;
-G2L["98"]["Size"] = UDim2.new(0, 169, 0, 23);
+G2L["98"]["Size"] = UDim2.new(0, 43, 0, 33);
 G2L["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["98"]["Text"] = [[Atualizado: Sem Updates]];
-G2L["98"]["Position"] = UDim2.new(0.4649, 0, 0.89653, 0);
+G2L["98"]["Text"] = [[X]];
+G2L["98"]["Name"] = [[Close]];
+G2L["98"]["Position"] = UDim2.new(0.90695, 0, -0.00157, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Outers.TextLabel
-G2L["99"] = Instance.new("TextLabel", G2L["90"]);
-G2L["99"]["TextWrapped"] = true;
-G2L["99"]["BorderSizePixel"] = 0;
-G2L["99"]["TextSize"] = 14;
-G2L["99"]["TextTransparency"] = 0.58;
-G2L["99"]["TextScaled"] = true;
-G2L["99"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["99"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["99"]["TextColor3"] = Color3.fromRGB(49, 192, 199);
-G2L["99"]["BackgroundTransparency"] = 1;
-G2L["99"]["Size"] = UDim2.new(0, 169, 0, 23);
-G2L["99"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["99"]["Text"] = [[PEDRINHUU ON TOP 👑]];
-G2L["99"]["Position"] = UDim2.new(0.72185, 0, 0.89653, 0);
+-- StarterGui.Painel do Mano.Panel.Close.LocalScript
+G2L["99"] = Instance.new("LocalScript", G2L["98"]);
 
 
--- StarterGui.Painel do Mano.Menu.Close
+
+-- StarterGui.Painel do Mano.Panel.Fechar
 G2L["9a"] = Instance.new("TextButton", G2L["2"]);
+G2L["9a"]["TextWrapped"] = true;
+G2L["9a"]["RichText"] = true;
 G2L["9a"]["BorderSizePixel"] = 0;
-G2L["9a"]["TextSize"] = 32;
+G2L["9a"]["TextSize"] = 59;
 G2L["9a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["9a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["9a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["9a"]["BackgroundTransparency"] = 1;
-G2L["9a"]["Size"] = UDim2.new(0, 43, 0, 33);
+G2L["9a"]["Size"] = UDim2.new(0, 36, 0, 33);
 G2L["9a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9a"]["Text"] = [[X]];
-G2L["9a"]["Name"] = [[Close]];
-G2L["9a"]["Position"] = UDim2.new(0.94305, 0, 0.00232, 0);
+G2L["9a"]["Text"] = [[-]];
+G2L["9a"]["Name"] = [[Fechar]];
+G2L["9a"]["Position"] = UDim2.new(0.82955, 0, 0, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Close.LocalScript
-G2L["9b"] = Instance.new("LocalScript", G2L["9a"]);
+-- StarterGui.Painel do Mano.OpenMenu
+G2L["9b"] = Instance.new("ImageButton", G2L["1"]);
+G2L["9b"]["BorderSizePixel"] = 0;
+G2L["9b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9b"]["Image"] = [[rbxassetid://13321848320]];
+G2L["9b"]["Size"] = UDim2.new(0, 40, 0, 40);
+G2L["9b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9b"]["Name"] = [[OpenMenu]];
+G2L["9b"]["Position"] = UDim2.new(0.51444, 0, 0.11091, 0);
 
 
-
--- StarterGui.Painel do Mano.Menu.Min
-G2L["9c"] = Instance.new("TextButton", G2L["2"]);
-G2L["9c"]["TextWrapped"] = true;
-G2L["9c"]["RichText"] = true;
-G2L["9c"]["BorderSizePixel"] = 0;
-G2L["9c"]["TextSize"] = 59;
-G2L["9c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9c"]["BackgroundTransparency"] = 1;
-G2L["9c"]["Size"] = UDim2.new(0, 36, 0, 33);
-G2L["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9c"]["Text"] = [[-]];
-G2L["9c"]["Name"] = [[Min]];
-G2L["9c"]["Position"] = UDim2.new(0.89536, 0, 0, 0);
+-- StarterGui.Painel do Mano.OpenMenu.UICorner
+G2L["9c"] = Instance.new("UICorner", G2L["9b"]);
+G2L["9c"]["CornerRadius"] = UDim.new(1, 0);
 
 
--- StarterGui.Painel do Mano.Menu.Min.LocalScript
-G2L["9d"] = Instance.new("LocalScript", G2L["9c"]);
+-- StarterGui.Painel do Mano.OpenMenu.Drag
+G2L["9d"] = Instance.new("LocalScript", G2L["9b"]);
+G2L["9d"]["Name"] = [[Drag]];
 
 
-
--- StarterGui.Painel do Mano.Open
-G2L["9e"] = Instance.new("ImageButton", G2L["1"]);
-G2L["9e"]["BorderSizePixel"] = 0;
-G2L["9e"]["Visible"] = false;
-G2L["9e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9e"]["Image"] = [[rbxassetid://13321848320]];
-G2L["9e"]["Size"] = UDim2.new(0, 51, 0, 51);
-G2L["9e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9e"]["Name"] = [[Open]];
-G2L["9e"]["Position"] = UDim2.new(0.2186, 0, 0.48391, 0);
-
-
--- StarterGui.Painel do Mano.Open. botao
-G2L["9f"] = Instance.new("LocalScript", G2L["9e"]);
-G2L["9f"]["Name"] = [[ botao]];
-
-
--- StarterGui.Painel do Mano.Open.LocalScript
-G2L["a0"] = Instance.new("LocalScript", G2L["9e"]);
+-- StarterGui.Painel do Mano.LocalScript
+G2L["9e"] = Instance.new("LocalScript", G2L["1"]);
 
 
 
--- StarterGui.Painel do Mano.Open.UICorner
-G2L["a1"] = Instance.new("UICorner", G2L["9e"]);
-G2L["a1"]["CornerRadius"] = UDim.new(1, 0);
-
-
--- StarterGui.Painel do Mano.Menu.Drag
+-- StarterGui.Painel do Mano.Panel.Drag
 local function C_3()
 local script = G2L["3"];
 	local UserInputService = game:GetService("UserInputService")
@@ -1564,7 +1533,7 @@ local script = G2L["3"];
 	
 end;
 task.spawn(C_3);
--- StarterGui.Painel do Mano.Menu.Buttons.Aim.LocalScript
+-- StarterGui.Painel do Mano.Panel.Buttons.Aim.LocalScript
 local function C_9()
 local script = G2L["9"];
 	local button = script.Parent
@@ -1587,9 +1556,9 @@ local script = G2L["9"];
 	end)
 end;
 task.spawn(C_9);
--- StarterGui.Painel do Mano.Menu.Buttons.Aim.LocalScript
-local function C_b()
-local script = G2L["b"];
+-- StarterGui.Painel do Mano.Panel.Buttons.Aim.LocalScript
+local function C_a()
+local script = G2L["a"];
 	local textLabel = script.Parent
 	local RunService = game:GetService("RunService")
 	
@@ -1606,8 +1575,8 @@ local script = G2L["b"];
 	end)
 	
 end;
-task.spawn(C_b);
--- StarterGui.Painel do Mano.Menu.Buttons.Visual.LocalScript
+task.spawn(C_a);
+-- StarterGui.Painel do Mano.Panel.Buttons.Visual.LocalScript
 local function C_d()
 local script = G2L["d"];
 	local button = script.Parent
@@ -1630,9 +1599,9 @@ local script = G2L["d"];
 	end)
 end;
 task.spawn(C_d);
--- StarterGui.Painel do Mano.Menu.Buttons.Visual.LocalScript
-local function C_f()
-local script = G2L["f"];
+-- StarterGui.Painel do Mano.Panel.Buttons.Visual.LocalScript
+local function C_e()
+local script = G2L["e"];
 	local textLabel = script.Parent
 	local RunService = game:GetService("RunService")
 	
@@ -1649,8 +1618,8 @@ local script = G2L["f"];
 	end)
 	
 end;
-task.spawn(C_f);
--- StarterGui.Painel do Mano.Menu.Buttons.FPS.LocalScript
+task.spawn(C_e);
+-- StarterGui.Painel do Mano.Panel.Buttons.FPS.LocalScript
 local function C_11()
 local script = G2L["11"];
 	local button = script.Parent
@@ -1673,9 +1642,9 @@ local script = G2L["11"];
 	end)
 end;
 task.spawn(C_11);
--- StarterGui.Painel do Mano.Menu.Buttons.FPS.LocalScript
-local function C_13()
-local script = G2L["13"];
+-- StarterGui.Painel do Mano.Panel.Buttons.FPS.LocalScript
+local function C_12()
+local script = G2L["12"];
 	local textLabel = script.Parent
 	local RunService = game:GetService("RunService")
 	
@@ -1692,8 +1661,8 @@ local script = G2L["13"];
 	end)
 	
 end;
-task.spawn(C_13);
--- StarterGui.Painel do Mano.Menu.Buttons.Outros.LocalScript
+task.spawn(C_12);
+-- StarterGui.Painel do Mano.Panel.Buttons.Outros.LocalScript
 local function C_15()
 local script = G2L["15"];
 	local button = script.Parent
@@ -1716,9 +1685,9 @@ local script = G2L["15"];
 	end)
 end;
 task.spawn(C_15);
--- StarterGui.Painel do Mano.Menu.Buttons.Outros.LocalScript
-local function C_17()
-local script = G2L["17"];
+-- StarterGui.Painel do Mano.Panel.Buttons.Outros.LocalScript
+local function C_16()
+local script = G2L["16"];
 	local textLabel = script.Parent
 	local RunService = game:GetService("RunService")
 	
@@ -1735,8 +1704,8 @@ local script = G2L["17"];
 	end)
 	
 end;
-task.spawn(C_17);
--- StarterGui.Painel do Mano.Menu.AimFrame.aimbut.LocalScript
+task.spawn(C_16);
+-- StarterGui.Painel do Mano.Panel.AimFrame.aimbut.LocalScript
 local function C_1a()
 local script = G2L["1a"];
 	----------------------------------------------------
@@ -1989,7 +1958,7 @@ local script = G2L["1a"];
 	
 end;
 task.spawn(C_1a);
--- StarterGui.Painel do Mano.Menu.AimFrame.aimbut.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.aimbut.TextLabel.LocalScript
 local function C_1d()
 local script = G2L["1d"];
 	local textLabel = script.Parent
@@ -2009,7 +1978,7 @@ local script = G2L["1d"];
 	
 end;
 task.spawn(C_1d);
--- StarterGui.Painel do Mano.Menu.AimFrame.aimlock.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.aimlock.LocalScript
 local function C_1f()
 local script = G2L["1f"];
 	------------------------------------------------
@@ -2146,7 +2115,7 @@ local script = G2L["1f"];
 	
 end;
 task.spawn(C_1f);
--- StarterGui.Painel do Mano.Menu.AimFrame.aimlock.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.aimlock.TextLabel.LocalScript
 local function C_22()
 local script = G2L["22"];
 	local textLabel = script.Parent
@@ -2166,7 +2135,7 @@ local script = G2L["22"];
 	
 end;
 task.spawn(C_22);
--- StarterGui.Painel do Mano.Menu.AimFrame.auxilio.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.auxilio.LocalScript
 local function C_24()
 local script = G2L["24"];
 	-- Aim Assist do PEDRINHUU (ATUALIZADO COM TC + NPC)
@@ -2346,7 +2315,7 @@ local script = G2L["24"];
 	
 end;
 task.spawn(C_24);
--- StarterGui.Painel do Mano.Menu.AimFrame.auxilio.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.auxilio.TextLabel.LocalScript
 local function C_27()
 local script = G2L["27"];
 	local textLabel = script.Parent
@@ -2366,7 +2335,7 @@ local script = G2L["27"];
 	
 end;
 task.spawn(C_27);
--- StarterGui.Painel do Mano.Menu.AimFrame.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.TextLabel.LocalScript
 local function C_2c()
 local script = G2L["2c"];
 	local textLabel = script.Parent
@@ -2386,7 +2355,7 @@ local script = G2L["2c"];
 	
 end;
 task.spawn(C_2c);
--- StarterGui.Painel do Mano.Menu.AimFrame.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.TextLabel.LocalScript
 local function C_30()
 local script = G2L["30"];
 	local textLabel = script.Parent
@@ -2406,7 +2375,7 @@ local script = G2L["30"];
 	
 end;
 task.spawn(C_30);
--- StarterGui.Painel do Mano.Menu.AimFrame.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.TextLabel.LocalScript
 local function C_34()
 local script = G2L["34"];
 	local textLabel = script.Parent
@@ -2426,9 +2395,9 @@ local script = G2L["34"];
 	
 end;
 task.spawn(C_34);
--- StarterGui.Painel do Mano.Menu.AimFrame.Set.LocalScript
-local function C_37()
-local script = G2L["37"];
+-- StarterGui.Painel do Mano.Panel.AimFrame.Set.LocalScript
+local function C_36()
+local script = G2L["36"];
 	local textLabel = script.Parent
 	local RunService = game:GetService("RunService")
 	
@@ -2445,8 +2414,8 @@ local script = G2L["37"];
 	end)
 	
 end;
-task.spawn(C_37);
--- StarterGui.Painel do Mano.Menu.AimFrame.Cabeca.LocalScript
+task.spawn(C_36);
+-- StarterGui.Painel do Mano.Panel.AimFrame.Cabeca.LocalScript
 local function C_3a()
 local script = G2L["3a"];
 	script.Parent.Activated:Connect(function()
@@ -2455,9 +2424,9 @@ local script = G2L["3a"];
 	
 end;
 task.spawn(C_3a);
--- StarterGui.Painel do Mano.Menu.AimFrame.Cabeca.LocalScript
-local function C_3c()
-local script = G2L["3c"];
+-- StarterGui.Painel do Mano.Panel.AimFrame.Cabeca.LocalScript
+local function C_3b()
+local script = G2L["3b"];
 	local textLabel = script.Parent
 	local RunService = game:GetService("RunService")
 	
@@ -2474,8 +2443,8 @@ local script = G2L["3c"];
 	end)
 	
 end;
-task.spawn(C_3c);
--- StarterGui.Painel do Mano.Menu.AimFrame.TextLabel.LocalScript
+task.spawn(C_3b);
+-- StarterGui.Painel do Mano.Panel.AimFrame.TextLabel.LocalScript
 local function C_3e()
 local script = G2L["3e"];
 	local textLabel = script.Parent
@@ -2495,7 +2464,7 @@ local script = G2L["3e"];
 	
 end;
 task.spawn(C_3e);
--- StarterGui.Painel do Mano.Menu.AimFrame.Corpo.LocalScript
+-- StarterGui.Painel do Mano.Panel.AimFrame.Corpo.LocalScript
 local function C_40()
 local script = G2L["40"];
 	script.Parent.Activated:Connect(function()
@@ -2504,9 +2473,9 @@ local script = G2L["40"];
 	
 end;
 task.spawn(C_40);
--- StarterGui.Painel do Mano.Menu.AimFrame.Corpo.LocalScript
-local function C_42()
-local script = G2L["42"];
+-- StarterGui.Painel do Mano.Panel.AimFrame.Corpo.LocalScript
+local function C_41()
+local script = G2L["41"];
 	local textLabel = script.Parent
 	local RunService = game:GetService("RunService")
 	
@@ -2523,10 +2492,10 @@ local script = G2L["42"];
 	end)
 	
 end;
-task.spawn(C_42);
--- StarterGui.Painel do Mano.Menu.AimFrame.NPC.LocalScript
-local function C_45()
-local script = G2L["45"];
+task.spawn(C_41);
+-- StarterGui.Painel do Mano.Panel.AimFrame.NPC.LocalScript
+local function C_44()
+local script = G2L["44"];
 	local textLabel = script.Parent
 	local RunService = game:GetService("RunService")
 	
@@ -2543,10 +2512,10 @@ local script = G2L["45"];
 	end)
 	
 end;
-task.spawn(C_45);
--- StarterGui.Painel do Mano.Menu.AimFrame.TC.LocalScript
-local function C_48()
-local script = G2L["48"];
+task.spawn(C_44);
+-- StarterGui.Painel do Mano.Panel.AimFrame.TC.LocalScript
+local function C_47()
+local script = G2L["47"];
 	local textLabel = script.Parent
 	local RunService = game:GetService("RunService")
 	
@@ -2563,8 +2532,8 @@ local script = G2L["48"];
 	end)
 	
 end;
-task.spawn(C_48);
--- StarterGui.Painel do Mano.Menu.Visuais.esp.LocalScript
+task.spawn(C_47);
+-- StarterGui.Painel do Mano.Panel.Visuais.esp.LocalScript
 local function C_4b()
 local script = G2L["4b"];
 	local Players = game:GetService("Players")
@@ -2670,7 +2639,7 @@ local script = G2L["4b"];
 	end)
 end;
 task.spawn(C_4b);
--- StarterGui.Painel do Mano.Menu.Visuais.esp.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.esp.TextLabel.LocalScript
 local function C_4e()
 local script = G2L["4e"];
 	local textLabel = script.Parent
@@ -2690,7 +2659,7 @@ local script = G2L["4e"];
 	
 end;
 task.spawn(C_4e);
--- StarterGui.Painel do Mano.Menu.Visuais.t esp.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.t esp.LocalScript
 local function C_50()
 local script = G2L["50"];
 	local button = script.Parent
@@ -2865,7 +2834,7 @@ local script = G2L["50"];
 	end)
 end;
 task.spawn(C_50);
--- StarterGui.Painel do Mano.Menu.Visuais.t esp.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.t esp.TextLabel.LocalScript
 local function C_53()
 local script = G2L["53"];
 	local textLabel = script.Parent
@@ -2885,64 +2854,39 @@ local script = G2L["53"];
 	
 end;
 task.spawn(C_53);
--- StarterGui.Painel do Mano.Menu.Visuais.l esp.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.l esp.LocalScript
 local function C_55()
 local script = G2L["55"];
-	-- ESP de Linhas para Jogadores
-	-- Script Local
-	
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
 	local LocalPlayer = Players.LocalPlayer
 	local Camera = workspace.CurrentCamera
 	
-	-- ===== BOTÃO (NÃO MODIFICA UI) =====
-	local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
-	local ScreenGui = PlayerGui:WaitForChild("ScreenGui") -- altere se necessário
-	local ToggleButton = ScreenGui:WaitForChild("ToggleButton") -- altere se necessário
-	
-	-- Tabela para armazenar as linhas de cada jogador
+	local ESPEnabled = false
 	local ESPLines = {}
+	local UpdateConnection = nil
 	
-	-- Configurações
-	local CONFIG = {
-		LineColor = Color3.fromRGB(255, 0, 0),
-		LineThickness = 2,
-		LineTransparency = 0.5,
-		Enabled = false -- começa desligado
-	}
+	local function CreateESPLine(player)
+		if player == LocalPlayer then return end
 	
-	-- Remove ESP
-	local function removeESP(player)
+		local line = Drawing.new("Line")
+		line.Visible = false
+		line.Color = Color3.fromRGB(255, 0, 0)
+		line.Thickness = 2
+		line.Transparency = 1
+	
+		ESPLines[player] = line
+	end
+	
+	local function RemoveESPLine(player)
 		if ESPLines[player] then
-			if ESPLines[player].Line then
-				ESPLines[player].Line:Remove()
-			end
+			ESPLines[player]:Remove()
 			ESPLines[player] = nil
 		end
 	end
 	
-	-- Cria ESP
-	local function createESP(player)
-		if player == LocalPlayer then return end
-	
-		removeESP(player)
-	
-		local line = Drawing.new("Line")
-		line.Thickness = CONFIG.LineThickness
-		line.Color = CONFIG.LineColor
-		line.Transparency = CONFIG.LineTransparency
-		line.Visible = false
-	
-		ESPLines[player] = {
-			Line = line,
-			Player = player
-		}
-	end
-	
-	-- Atualiza ESP
-	local function updateESP()
-		if not CONFIG.Enabled then return end
+	local function UpdateESPLines()
+		if not ESPEnabled then return end
 	
 		local localChar = LocalPlayer.Character
 		if not localChar then return end
@@ -2950,102 +2894,100 @@ local script = G2L["55"];
 		local localRoot = localChar:FindFirstChild("HumanoidRootPart")
 		if not localRoot then return end
 	
-		local screenCenter = Vector2.new(
-			Camera.ViewportSize.X / 2,
-			Camera.ViewportSize.Y / 2
-		)
+		for player, line in pairs(ESPLines) do
+			if player and player.Parent then
+				local character = player.Character
 	
-		for player, espData in pairs(ESPLines) do
-			local char = player.Character
-			if char then
-				local hum = char:FindFirstChild("Humanoid")
-				local root = char:FindFirstChild("HumanoidRootPart")
+				if character then
+					local humanoid = character:FindFirstChild("Humanoid")
+					local rootPart = character:FindFirstChild("HumanoidRootPart")
 	
-				if hum and root and hum.Health > 0 then
-					local pos, onScreen = Camera:WorldToViewportPoint(root.Position)
-					if onScreen then
-						espData.Line.From = screenCenter
-						espData.Line.To = Vector2.new(pos.X, pos.Y)
-						espData.Line.Visible = true
+					if humanoid and humanoid.Health > 0 and rootPart then
+						local rootPos, onScreen = Camera:WorldToViewportPoint(rootPart.Position)
+						local localPos = Camera:WorldToViewportPoint(localRoot.Position)
+	
+						if onScreen then
+							line.From = Vector2.new(localPos.X, localPos.Y)
+							line.To = Vector2.new(rootPos.X, rootPos.Y)
+							line.Visible = true
+						else
+							line.Visible = false
+						end
 					else
-						espData.Line.Visible = false
+						line.Visible = false
 					end
 				else
-					espData.Line.Visible = false
+					line.Visible = false
 				end
 			else
-				espData.Line.Visible = false
+				RemoveESPLine(player)
 			end
 		end
 	end
 	
-	-- Toggle ESP
-	local function toggleESP()
-		CONFIG.Enabled = not CONFIG.Enabled
+	local function ToggleESP()
+		ESPEnabled = not ESPEnabled
 	
-		if not CONFIG.Enabled then
-			for _, espData in pairs(ESPLines) do
-				espData.Line.Visible = false
+		if ESPEnabled then
+			script.Parent.Text = ""
+			script.Parent.BorderColor3 = Color3.fromRGB(0, 255, 0)
+	
+			for _, player in pairs(Players:GetPlayers()) do
+				CreateESPLine(player)
+			end
+	
+			UpdateConnection = RunService.RenderStepped:Connect(UpdateESPLines)
+		else
+			script.Parent.Text = ""
+			script.Parent.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	
+			for player, line in pairs(ESPLines) do
+				line:Remove()
+			end
+			ESPLines = {}
+	
+			if UpdateConnection then
+				UpdateConnection:Disconnect()
 			end
 		end
 	end
 	
-	-- ===== CLIQUE DO BOTÃO =====
-	ToggleButton.MouseButton1Click:Connect(function()
-		toggleESP()
+	script.Parent.MouseButton1Click:Connect(ToggleESP)
+	
+	Players.PlayerAdded:Connect(function(player)
+		if ESPEnabled then
+			CreateESPLine(player)
+		end
 	end)
 	
-	-- Player Added
-	Players.PlayerAdded:Connect(function(player)
-		player.CharacterAdded:Connect(function()
-			createESP(player)
+	Players.PlayerRemoving:Connect(function(player)
+		RemoveESPLine(player)
+	end)
+	
+	local function SetupPlayerMonitoring(player)
+		if player == LocalPlayer then return end
+	
+		player.CharacterAdded:Connect(function(character)
+			if ESPEnabled then
+				character:WaitForChild("HumanoidRootPart")
+			end
 		end)
 	
-		if player.Character then
-			createESP(player)
-		end
-	end)
-	
-	-- Player Removing
-	Players.PlayerRemoving:Connect(function(player)
-		removeESP(player)
-	end)
-	
-	-- Jogadores já existentes
-	for _, player in pairs(Players:GetPlayers()) do
-		if player ~= LocalPlayer then
-			createESP(player)
-	
-			player.CharacterAdded:Connect(function()
-				createESP(player)
-			end)
-		end
+		player.CharacterRemoving:Connect(function()
+			if ESPLines[player] then
+				ESPLines[player].Visible = false
+			end
+		end)
 	end
 	
-	-- Respawn local
-	LocalPlayer.CharacterAdded:Connect(function()
-		for _, player in pairs(Players:GetPlayers()) do
-			if player ~= LocalPlayer then
-				createESP(player)
-			end
-		end
-	end)
+	for _, player in pairs(Players:GetPlayers()) do
+		SetupPlayerMonitoring(player)
+	end
 	
-	-- Loop
-	RunService.RenderStepped:Connect(updateESP)
-	
-	-- Cleanup
-	game:GetService("CoreGui").ChildRemoved:Connect(function()
-		for _, espData in pairs(ESPLines) do
-			if espData.Line then
-				espData.Line:Remove()
-			end
-		end
-	end)
-	
+	Players.PlayerAdded:Connect(SetupPlayerMonitoring)
 end;
 task.spawn(C_55);
--- StarterGui.Painel do Mano.Menu.Visuais.l esp.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.l esp.TextLabel.LocalScript
 local function C_58()
 local script = G2L["58"];
 	local textLabel = script.Parent
@@ -3065,7 +3007,7 @@ local script = G2L["58"];
 	
 end;
 task.spawn(C_58);
--- StarterGui.Painel do Mano.Menu.Visuais.m esp.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.m esp.LocalScript
 local function C_5a()
 local script = G2L["5a"];
 	local Players = game:GetService("Players")
@@ -3174,7 +3116,7 @@ local script = G2L["5a"];
 	
 end;
 task.spawn(C_5a);
--- StarterGui.Painel do Mano.Menu.Visuais.m esp.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.m esp.TextLabel.LocalScript
 local function C_5d()
 local script = G2L["5d"];
 	local textLabel = script.Parent
@@ -3194,7 +3136,7 @@ local script = G2L["5d"];
 	
 end;
 task.spawn(C_5d);
--- StarterGui.Painel do Mano.Menu.Visuais.d esp.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.d esp.LocalScript
 local function C_5f()
 local script = G2L["5f"];
 	local button = script.Parent
@@ -3359,7 +3301,7 @@ local script = G2L["5f"];
 	end)
 end;
 task.spawn(C_5f);
--- StarterGui.Painel do Mano.Menu.Visuais.d esp.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.d esp.TextLabel.LocalScript
 local function C_62()
 local script = G2L["62"];
 	local textLabel = script.Parent
@@ -3379,7 +3321,7 @@ local script = G2L["62"];
 	
 end;
 task.spawn(C_62);
--- StarterGui.Painel do Mano.Menu.Visuais.mira fixa.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.mira fixa.LocalScript
 local function C_64()
 local script = G2L["64"];
 	-- Center Dot controlável por botão
@@ -3447,7 +3389,7 @@ local script = G2L["64"];
 	
 end;
 task.spawn(C_64);
--- StarterGui.Painel do Mano.Menu.Visuais.mira fixa.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.mira fixa.TextLabel.LocalScript
 local function C_67()
 local script = G2L["67"];
 	local textLabel = script.Parent
@@ -3467,9 +3409,9 @@ local script = G2L["67"];
 	
 end;
 task.spawn(C_67);
--- StarterGui.Painel do Mano.Menu.Visuais.SetFov.LocalScript
-local function C_6a()
-local script = G2L["6a"];
+-- StarterGui.Painel do Mano.Panel.Visuais.SetFov.LocalScript
+local function C_69()
+local script = G2L["69"];
 	local textLabel = script.Parent
 	local RunService = game:GetService("RunService")
 	
@@ -3486,8 +3428,8 @@ local script = G2L["6a"];
 	end)
 	
 end;
-task.spawn(C_6a);
--- StarterGui.Painel do Mano.Menu.Visuais.FOV.LocalScript
+task.spawn(C_69);
+-- StarterGui.Painel do Mano.Panel.Visuais.FOV.LocalScript
 local function C_6c()
 local script = G2L["6c"];
 	local button = script.Parent
@@ -3509,7 +3451,7 @@ local script = G2L["6c"];
 	
 end;
 task.spawn(C_6c);
--- StarterGui.Painel do Mano.Menu.Visuais.FOV.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Visuais.FOV.TextLabel.LocalScript
 local function C_6f()
 local script = G2L["6f"];
 	local textLabel = script.Parent
@@ -3529,7 +3471,7 @@ local script = G2L["6f"];
 	
 end;
 task.spawn(C_6f);
--- StarterGui.Painel do Mano.Menu.Fps.eff.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.LocalScript
 local function C_72()
 local script = G2L["72"];
 	local Lighting = game:GetService("Lighting")
@@ -3593,7 +3535,7 @@ local script = G2L["72"];
 	
 end;
 task.spawn(C_72);
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel.LocalScript
 local function C_75()
 local script = G2L["75"];
 	local textLabel = script.Parent
@@ -3613,7 +3555,7 @@ local script = G2L["75"];
 	
 end;
 task.spawn(C_75);
--- StarterGui.Painel do Mano.Menu.Fps.eff.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.LocalScript
 local function C_77()
 local script = G2L["77"];
 	local button = script.Parent
@@ -3672,7 +3614,7 @@ local script = G2L["77"];
 	
 end;
 task.spawn(C_77);
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel.LocalScript
 local function C_7a()
 local script = G2L["7a"];
 	local textLabel = script.Parent
@@ -3692,7 +3634,7 @@ local script = G2L["7a"];
 	
 end;
 task.spawn(C_7a);
--- StarterGui.Painel do Mano.Menu.Fps.eff.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.LocalScript
 local function C_7c()
 local script = G2L["7c"];
 	local Lighting = game:GetService("Lighting")
@@ -3731,7 +3673,7 @@ local script = G2L["7c"];
 	
 end;
 task.spawn(C_7c);
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel.LocalScript
 local function C_7f()
 local script = G2L["7f"];
 	local textLabel = script.Parent
@@ -3751,7 +3693,7 @@ local script = G2L["7f"];
 	
 end;
 task.spawn(C_7f);
--- StarterGui.Painel do Mano.Menu.Fps.eff.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.LocalScript
 local function C_81()
 local script = G2L["81"];
 	local button = script.Parent
@@ -3805,7 +3747,7 @@ local script = G2L["81"];
 	
 end;
 task.spawn(C_81);
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel.LocalScript
 local function C_84()
 local script = G2L["84"];
 	local textLabel = script.Parent
@@ -3825,7 +3767,7 @@ local script = G2L["84"];
 	
 end;
 task.spawn(C_84);
--- StarterGui.Painel do Mano.Menu.Fps.eff.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.LocalScript
 local function C_86()
 local script = G2L["86"];
 	-- SERVIÇOS
@@ -4009,7 +3951,7 @@ local script = G2L["86"];
 	
 end;
 task.spawn(C_86);
--- StarterGui.Painel do Mano.Menu.Fps.eff.TextLabel.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.eff.TextLabel.LocalScript
 local function C_89()
 local script = G2L["89"];
 	local textLabel = script.Parent
@@ -4029,7 +3971,7 @@ local script = G2L["89"];
 	
 end;
 task.spawn(C_89);
--- StarterGui.Painel do Mano.Menu.Fps.FPSDisplay.LocalScript
+-- StarterGui.Painel do Mano.Panel.Fps.FPSDisplay.LocalScript
 local function C_8b()
 local script = G2L["8b"];
 	local waitTime = 0.3
@@ -4070,9 +4012,9 @@ local script = G2L["8b"];
 	end)
 end;
 task.spawn(C_8b);
--- StarterGui.Painel do Mano.Menu.Fps.FPSDisplay.LocalScript
-local function C_8d()
-local script = G2L["8d"];
+-- StarterGui.Painel do Mano.Panel.Fps.FPSDisplay.LocalScript
+local function C_8c()
+local script = G2L["8c"];
 	local textLabel = script.Parent
 	local RunService = game:GetService("RunService")
 	
@@ -4089,8 +4031,8 @@ local script = G2L["8d"];
 	end)
 	
 end;
-task.spawn(C_8d);
--- StarterGui.Painel do Mano.Menu.Fps.TextLabel.LocalScript
+task.spawn(C_8c);
+-- StarterGui.Painel do Mano.Panel.Fps.TextLabel.LocalScript
 local function C_8f()
 local script = G2L["8f"];
 	local textLabel = script.Parent
@@ -4110,7 +4052,7 @@ local script = G2L["8f"];
 	
 end;
 task.spawn(C_8f);
--- StarterGui.Painel do Mano.Menu.Outers.Pedrinhuu On Top.LocalScript
+-- StarterGui.Painel do Mano.Panel.Outers.Pedrinhuu On Top.LocalScript
 local function C_93()
 local script = G2L["93"];
 	local textLabel = script.Parent
@@ -4130,9 +4072,9 @@ local script = G2L["93"];
 	
 end;
 task.spawn(C_93);
--- StarterGui.Painel do Mano.Menu.Close.LocalScript
-local function C_9b()
-local script = G2L["9b"];
+-- StarterGui.Painel do Mano.Panel.Close.LocalScript
+local function C_99()
+local script = G2L["99"];
 	local button = script.Parent
 	local screenGui = button:FindFirstAncestorOfClass("ScreenGui")
 	
@@ -4143,35 +4085,21 @@ local script = G2L["9b"];
 	end)
 	
 end;
-task.spawn(C_9b);
--- StarterGui.Painel do Mano.Menu.Min.LocalScript
+task.spawn(C_99);
+-- StarterGui.Painel do Mano.OpenMenu.Drag
 local function C_9d()
 local script = G2L["9d"];
-	local screenGui = script.Parent.Parent.Parent
-	local menu = screenGui:WaitForChild("Menu")
-	local openButton = screenGui:WaitForChild("Open")
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		menu.Visible = false
-		openButton.Visible = true
-	end)
-	
-end;
-task.spawn(C_9d);
--- StarterGui.Painel do Mano.Open. botao
-local function C_9f()
-local script = G2L["9f"];
-	local button = script.Parent
-	local UIS = game:GetService("UserInputService")
+	local UserInputService = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	local gui = player:WaitForChild("PlayerGui")
+	local frame = script.Parent -- Coloque o LocalScript dentro do Frame que será arrastável
 	
 	local dragging = false
-	local dragStart
-	local startPos
-	local moved = false
+	local dragInput, dragStart, startPos
 	
 	local function update(input)
 		local delta = input.Position - dragStart
-		button.Position = UDim2.new(
+		frame.Position = UDim2.new(
 			startPos.X.Scale,
 			startPos.X.Offset + delta.X,
 			startPos.Y.Scale,
@@ -4179,12 +4107,11 @@ local script = G2L["9f"];
 		)
 	end
 	
-	button.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = true
-			moved = false
 			dragStart = input.Position
-			startPos = button.Position
+			startPos = frame.Position
 	
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
@@ -4194,37 +4121,45 @@ local script = G2L["9f"];
 		end
 	end)
 	
-	button.InputChanged:Connect(function(input)
-		if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-			moved = true
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
 			update(input)
 		end
 	end)
 	
-	button.Activated:Connect(function()
-		if moved then return end -- BLOQUEIA clique se foi arrasto
+end;
+task.spawn(C_9d);
+-- StarterGui.Painel do Mano.LocalScript
+local function C_9e()
+local script = G2L["9e"];
+	local screenGui = script.Parent
+	local menu = screenGui:WaitForChild("Panel")
+	local minButton = menu:WaitForChild("Fechar")
+	local openButton = screenGui:WaitForChild("OpenMenu")
 	
-		local screenGui = button.Parent
-		local menu = screenGui:WaitForChild("Menu")
+	-- Estado inicial
+	menu.Visible = true
+	openButton.Visible = false
 	
+	-- Minimizar menu
+	minButton.MouseButton1Click:Connect(function()
+		menu.Visible = false
+		openButton.Visible = true
+	end)
+	
+	-- Reabrir menu
+	openButton.MouseButton1Click:Connect(function()
 		menu.Visible = true
-		button.Visible = false
+		openButton.Visible = false
 	end)
 	
 end;
-task.spawn(C_9f);
--- StarterGui.Painel do Mano.Open.LocalScript
-local function C_a0()
-local script = G2L["a0"];
-	local screenGui = script.Parent.Parent
-	local menu = screenGui:WaitForChild("Menu")
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		menu.Visible = true
-		script.Parent.Visible = false
-	end)
-	
-end;
-task.spawn(C_a0);
+task.spawn(C_9e);
 
 return G2L["1"], require;
